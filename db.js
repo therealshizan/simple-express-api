@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 
-const connectionString = 'postgres://admin:nUoX3AVI6zjfD3WOKWZd8eRzHTxtzRXq@dpg-cjjql9fjbvhs73bjffv0-a.oregon-postgres.render.com/demodb_yhme'
+const connectionString = 'postgres://admin:nUoX3AVI6zjfD3WOKWZd8eRzHTxtzRXq@dpg-cjjql9fjbvhs73bjffv0-a:5432/demodb_yhme'
 
 const pool = new Pool({
   // user: 'admin',
