@@ -4,6 +4,7 @@ const queries = require("./queries");
 const bodyParser = require('body-parser')
 
 const app = express();
+const port = process.env.PORT || 3000
 
 // Use body-parser middleware to parse JSON in request body
 app.use(bodyParser.json());
@@ -93,6 +94,6 @@ app.delete('/users/:id', (req, res) => {
 
 
 
-app.listen(8080, () => {
-  console.log("Server Running on http://localhost:8080");
+app.listen(port, () => {
+  console.log(`Server Running on http://localhost:${port}`);
 });
